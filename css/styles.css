@@ -194,6 +194,7 @@ button {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  transition: color var(--transition);
 }
 .site-menu__link.active {
   color: var(--ocean);
@@ -611,7 +612,12 @@ button {
   background: var(--navyblue-modal);
 }
 .modal-window {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-height: 584px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 408px;
   height: 584px;
   flex-shrink: 0;
@@ -621,31 +627,35 @@ button {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 .modal-close {
+  display: flex;
   position: absolute;
-  height: 24px;
-  width: 24px;
-  right: 24px;
   top: 24px;
+  right: 24px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), color var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.10);
   border-radius: 50%;
   background-color: var(--cornflower);
-  border: 1px solid rgba(0, 0, 0, 0.10);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color var(--transition), border-color var(--transition), color var(--transition);
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 .modal-close:hover,
 .modal-close:focus {
-  background-color: var(--iris);
+  background-color: var(--ocean);
+  border: none;
   border-color: transparent;
 }
 .modal-close:hover .icon,
 .modal-close:focus .icon {
   color: var(--cloud);
+  fill: #ffffff;
 }
 .modal-close .icon {
   color: var(--navy-blue);
   stroke: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
