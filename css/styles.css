@@ -181,11 +181,17 @@ button {
 }
 .site-menu {
   display: flex;
-  gap: 40px;
+  /* gap: 40px; */
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+}
+.site-menu__item {
+  margin-right: 40px;
+}
+.site-menu__item:last-child {
+  margin-right: 0;
 }
 .site-menu__link {
   display: inline-block;
@@ -309,6 +315,7 @@ button {
   background-size: cover;
   background-position: center;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .main-section-hero .text-h-one {
   max-width: 496px;
@@ -452,11 +459,17 @@ button {
   margin-bottom: 8px;
 }
 /* ========== Section five ========== */
+.main-section-five {
+  background-color: #ffffff;
+}
 .main-section-five-header {
   margin-bottom: 72px;
   color: var(--navy-blue);
+  text-align: center;
 }
 .clients-list {
+  display: flex;
+  gap: 24px;
 }
 .clients-list .item {
   width: calc((100% - 120px) / 6);
