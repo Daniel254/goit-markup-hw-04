@@ -640,6 +640,7 @@ button {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 .modal-close {
+  display: flex;
   line-height: 0;
   position: absolute;
   top: 24px;
