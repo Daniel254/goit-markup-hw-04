@@ -12,6 +12,7 @@
   --dairy: #fcfcfc;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* ========== /Variables ========== */
 
 body {
@@ -81,6 +82,7 @@ button {
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
@@ -131,11 +133,9 @@ button {
   letter-spacing: 0.04em;
 }
 
-.text-small {
-}
+.text-small {}
 
-.text-link {
-}
+.text-link {}
 
 /* ========== /Typography ========== */
 
@@ -148,16 +148,19 @@ button {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .site-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .site-header .site-nav {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   color: var(--iris);
@@ -170,15 +173,19 @@ button {
   text-decoration: none;
   margin-right: 76px;
 }
+
 .logo__web {
   color: var(--iris);
 }
+
 .logo__studio {
   color: var(--navy-blue);
 }
+
 .logo__studio--footer {
   color: var(--cloud);
 }
+
 .site-menu {
   display: flex;
   /* gap: 40px; */
@@ -187,12 +194,15 @@ button {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
+
 .site-menu__item {
   margin-right: 40px;
 }
+
 .site-menu__item:last-child {
   margin-right: 0;
 }
+
 .site-menu__link {
   display: inline-block;
   position: relative;
@@ -202,9 +212,11 @@ button {
   color: var(--navy-blue);
   transition: color var(--transition);
 }
+
 .site-menu__link.active {
   color: var(--ocean);
 }
+
 .site-menu__link.active::after {
   content: "";
   position: absolute;
@@ -216,22 +228,27 @@ button {
   border-radius: 2px;
   transition: color var(--transition);
 }
+
 .site-menu__link:hover,
 .site-menu__link:focus {
   color: var(--ocean);
 }
+
 .site-address {
   font-style: normal;
 }
+
 .address-list {
   display: flex;
   gap: 40px;
 }
+
 .address-link {
   color: var(--slate);
   text-decoration: none;
   transition: color var(--transition);
 }
+
 .address-link:hover,
 .address-link:focus {
   color: var(--ocean);
@@ -244,13 +261,16 @@ button {
   padding: 100px 0;
   background-color: var(--navy-blue);
 }
+
 .page-footer .container {
   display: flex;
   align-items: baseline;
 }
+
 .page-footer-text {
   margin-right: 120px;
 }
+
 .page-footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -262,20 +282,24 @@ button {
   font-size: 18px;
   font-weight: 800;
 }
+
 .page-footer .text {
   color: var(--cloud);
   max-width: 264px;
 }
-.page-footer-social {
-}
+
+.page-footer-social {}
+
 .page-footer-social .list {
   display: flex;
   gap: 16px;
 }
+
 .page-footer-social .item {
   width: 40px;
   height: 40px;
 }
+
 .page-footer-social .link {
   width: 100%;
   height: 100%;
@@ -286,17 +310,21 @@ button {
   align-items: center;
   transition: background-color var(--transition);
 }
+
 .page-footer-social .link:hover,
 .page-footer-social .link:focus {
   background-color: #31d0aa;
 }
+
 .page-footer-social .icon {
   fill: var(--cloud);
 }
+
 .page-footer-social__header {
   color: var(--white);
   margin-bottom: 16px;
 }
+
 /* ========== /Footer ========== */
 
 /* ========== Main page ========== */
@@ -304,12 +332,11 @@ button {
 .main-section {
   background-color: var(--navy-blue);
 }
+
 .main-section-hero {
   padding: 188px 0;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -317,10 +344,12 @@ button {
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .main-section-hero .text-h-one {
   max-width: 496px;
   margin: 0 auto;
 }
+
 .order-service {
   display: block;
   margin: 48px auto 0;
@@ -336,11 +365,13 @@ button {
   font-weight: 500;
   transition: background-color var(--transition);
 }
+
 .order-service:hover,
 .order-service:focus {
   background-color: #404bbf;
   cursor: pointer;
 }
+
 /* .main-section-heading {
   color: var(--navy-blue);
 } */
@@ -349,9 +380,11 @@ button {
   display: flex;
   gap: 24px;
 }
+
 .feature {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 .feature .icon-container {
   display: flex;
   justify-content: center;
@@ -360,20 +393,25 @@ button {
   background-color: var(--cloud);
   border-radius: 4px;
   margin-bottom: 8px;
+  border: 1px solid var(--light-slate);
 }
+
 .feature__heading {
   color: var(--navy-blue);
   margin-bottom: 8px;
 }
+
 .feature__text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+
 /* ========== Section three ========== */
 .main-section-three {
   padding-bottom: 120px;
 }
+
 .main-section-three-header {
   margin-bottom: 72px;
   text-align: center;
@@ -383,17 +421,21 @@ button {
   color: var(--navy-blue);
   font-size: 36px;
 }
+
 .main-section-three .list {
   display: flex;
   gap: 24px;
 }
+
 .main-section-three .list-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
+
 /* ========== Section four ========== */
 .main-section-four {
   background-color: #f4f4fd;
 }
+
 .main-section-four-header {
   margin-bottom: 72px;
   text-align: center;
@@ -403,10 +445,12 @@ button {
   color: var(--navy-blue);
   font-size: 36px;
 }
+
 .main-section-four .list {
   display: flex;
   gap: 24px;
 }
+
 .main-section-four-list-item {
   background-color: #ffffff;
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -414,19 +458,28 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.main-section-four-list-item:hover .main-section-four-list-item-p {
+  transform: translateY(0%);
+}
+
 .main-section-four-list-item .employee-data {
   padding: 32px 0;
 }
+
 .employee-data .social-link-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
+
 .employee-data .social-link-list .item {
   width: 40px;
   height: 40px;
 }
+
 .employee-data .social-link-list .link {
   width: 100%;
   height: 100%;
@@ -437,13 +490,16 @@ button {
   align-items: center;
   transition: background-color var(--transition);
 }
+
 .employee-data .social-link-list .link:hover,
 .employee-data .social-link-list .link:focus {
   background-color: var(--ocean);
 }
+
 .employee-data .social-link-list .icon {
   fill: #f4f4fd;
 }
+
 .main-section-four-list-item-heading {
   margin-bottom: 8px;
   text-align: center;
@@ -453,28 +509,34 @@ button {
   font-size: 20px;
   font-weight: 500;
 }
+
 .main-section-four-list-item-p {
   font-size: 16px;
   text-align: center;
   margin-bottom: 8px;
 }
+
 /* ========== Section five ========== */
 .main-section-five {
   background-color: #ffffff;
 }
+
 .main-section-five-header {
   margin-bottom: 72px;
   color: var(--navy-blue);
   text-align: center;
 }
+
 .clients-list {
   display: flex;
   gap: 24px;
 }
+
 .clients-list .item {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
+
 .clients-list .link {
   width: 100%;
   height: 100%;
@@ -486,18 +548,22 @@ button {
   color: var(--light-slate);
   transition: border-color var(--transition), color var(--transition);
 }
+
 .clients-list .link:hover,
 .clients-list .link:focus {
   border-color: var(--ocean);
   color: var(--ocean);
 }
+
 .clients-list .icon {
   fill: currentColor;
 }
+
 /* ========== Portfolio page ========== */
 .portfolio-section {
   padding: 96px 0 120px 0;
 }
+
 /* ========== Filters ========== */
 .tag-list {
   display: flex;
@@ -505,8 +571,9 @@ button {
   gap: 24px;
   margin-bottom: 72px;
 }
-.tag-list__item {
-}
+
+.tag-list__item {}
+
 .tag-list-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -521,6 +588,7 @@ button {
   transition: color var(--transition), background-color var(--transition),
     border-color var(--transition), box-shadow var(--transition);
 }
+
 .tag-list-button:hover {
   cursor: pointer;
   color: #ffffff;
@@ -553,13 +621,16 @@ button {
   column-gap: 24px;
   row-gap: 48px;
 }
+
 .project-list .item {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
+
 .project-card {
   text-decoration: none;
   display: block;
 }
+
 .project-card:hover,
 .project-card:focus {
   cursor: pointer;
@@ -567,17 +638,21 @@ button {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow var(--transition);
 }
+
 .project-card:hover .project-card__description,
 .project-card:focus .project-card__description {
   transform: translateY(0%);
 }
+
 .project-card__image-wrapper {
   position: relative;
   overflow: hidden;
 }
+
 .project-card__description {
   position: absolute;
   top: 0;
+  font-size: 16px;
   color: var(--cloud);
   padding: 40px 32px;
   background-color: var(--iris);
@@ -586,16 +661,19 @@ button {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
+
 .project-card__data {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
 .project-card__heading {
   color: var(--navy-blue);
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+
 .project-card__tag {
   margin: 0;
   color: var(--slate);
@@ -624,6 +702,7 @@ button {
   transition: opacity var(--transition), visibility var(--transition);
   background: var(--navyblue-modal);
 }
+
 .modal-window {
   position: absolute;
   top: 50%;
@@ -639,6 +718,7 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
+
 .modal-close {
   display: flex;
   line-height: 0;
@@ -655,22 +735,26 @@ button {
   height: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close:hover,
 .modal-close:focus {
   background-color: var(--ocean);
   border: none;
   border-color: transparent;
 }
+
 .modal-close:hover .icon,
 .modal-close:focus .icon {
   color: var(--cloud);
   fill: #ffffff;
 }
+
 .modal-close .icon {
   color: var(--navy-blue);
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
